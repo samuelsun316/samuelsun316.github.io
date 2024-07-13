@@ -1,0 +1,54 @@
+:root {
+    --nav-border-color: transparent;
+    font-size: 1dvw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+    & a {
+        color: black;
+        text-decoration-line: none;
+    }
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+        border-color: var(--nav-border-color, transparent);
+    }
+    & th {
+        /* border: 1px solid black; */
+        height: 3em;
+        width: 25%;
+        background-color: gainsboro;
+        text-align: center;
+        border-color: var(--nav-border-color, transparent);
+        transition: background-color 0.5s ease;
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+    & td {
+        border-color: var(--nav-border-color, transparent);
+    }
+}
+
+td {
+    text-align: center;
+}
+
+.left {
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    padding: 10px;
+  }
+
+.right {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+  }
